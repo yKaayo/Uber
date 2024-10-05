@@ -2,29 +2,25 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1440px",
-    },
     colors: {
-      black: "#000",
-      white: "#fff",
+      dark: '#000',
+      light: '#fff',
     },
-    fontFamily: {
-      display:
-        'UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif',
+    borderRadius:{
+      '30px': '30px',
+    },
+    fontSize: {
+      '52px': '52px',
     },
     extend: {
-      spacing: {
-        128: "32rem",
-        144: "36rem",
+      margin: {
+        '18px': '18px',
+        '30px': '30px',
       },
-      borderRadius: {
-        "4xl": "2rem",
+      padding: {
+        '25px': '25px',
+        '64px': '64px',
       },
     },
-  },
-  plugins: [],
+  }
 };

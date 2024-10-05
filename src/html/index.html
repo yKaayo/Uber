@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS -->
+    <link href="../css/output.css" rel="stylesheet" />
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body class="w-full bg-dark px-[64px] text-light">
+    <main class="container mx-auto">
+      <div class="h-dvh">
+        <!-- Header -->
+        <header class="flex py-3">
+          <!-- Left Content -->
+          <div class="flex items-center">
+            <h1 class="text-2xl me-6"><a href="">Uber</a></h1>
+          </div>
+          <nav class="mr-auto">
+            <ul class="flex gap-x-1">
+              <li class="px-3 py-2.5 text-sm rounded-[30px]">
+                <a href="#">Viajar</a>
+              </li>
+              <li class="px-3 py-2.5 text-sm rounded-[30px]"><a href="#">Dirigir</a></li>
+              <li class="px-3 py-2.5 text-sm rounded-[30px]"><a href="">Empresa</a></li>
+              <li class="px-3 py-2.5 flex items-center text-sm rounded-[30px]">
+                <a href="#"
+                  >Sobre<i class="bi bi-chevron-compact-down ml-3"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Right Content -->
+          <ul class="flex items-center gap-x-1">
+            <li class="px-3 py-2.5 text-sm rounded-[30px]">
+              <button><i class="bi bi-globe mr-2"></i>PT-BR</button>
+            </li>
+            <li class="px-3 py-2.5 text-sm rounded-[30px]">
+              <a href="#">Ajuda</a>
+            </li>
+            <li class="px-3 py-2.5 text-sm rounded-[30px]">
+              <button>Fazer login</button>
+            </li>
+            <li class="text-sm">
+              <button class="bg-light text-dark px-3 py-2.5 rounded-[30px]">
+                Cadastre-se
+              </button>
+            </li>
+          </ul>
+        </header>
+
+        <!-- Hero -->
+        <div class="flex flex-col justify-center">
+          <h2 class="mb-8 text-[52px] font-bold">
+            Vá a qualquer lugar<br />com o app da Uber
+          </h2>
+          <p class="mb-[18px]">Solicite uma viagem, entre no carro e relaxe.</p>
+          <form action="" class="flex flex-col items-start">
+            <!-- Local -->
+            <label for="local"></label>
+            <input type="text" id="local" placeholder="Informe o local" class="mb-4 py-2.5"/>
+
+            <!-- Destiny -->
+            <label for="destiny"></label>
+            <input type="text" id="destiny" placeholder="Informar o destino" class="py-2.5"/>
+
+            <button class="px-[25px] py-3.5 rounded-lg mt-[30px] text-dark bg-light">
+              Ver preços
+            </button>
+          </form>
+        </div>
+      </div>
+      <footer></footer>
+    </main>
+
+    <!-- JS -->
+    <script src="../js/script.js"></script>
+  </body>
+</html>
