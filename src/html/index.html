@@ -24,7 +24,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
-  <body class="w-full bg-dark px-[64px] text-light">
+  <body class="w-full bg-dark px-[64px] text-light-100">
     <main class="container mx-auto">
       <div class="h-dvh">
         <!-- Header -->
@@ -38,8 +38,12 @@
               <li class="px-3 py-2.5 text-sm rounded-[30px]">
                 <a href="#">Viajar</a>
               </li>
-              <li class="px-3 py-2.5 text-sm rounded-[30px]"><a href="#">Dirigir</a></li>
-              <li class="px-3 py-2.5 text-sm rounded-[30px]"><a href="">Empresa</a></li>
+              <li class="px-3 py-2.5 text-sm rounded-[30px]">
+                <a href="#">Dirigir</a>
+              </li>
+              <li class="px-3 py-2.5 text-sm rounded-[30px]">
+                <a href="">Empresa</a>
+              </li>
               <li class="px-3 py-2.5 flex items-center text-sm rounded-[30px]">
                 <a href="#"
                   >Sobre<i class="bi bi-chevron-compact-down ml-3"></i
@@ -60,7 +64,7 @@
               <button>Fazer login</button>
             </li>
             <li class="text-sm">
-              <button class="bg-light text-dark px-3 py-2.5 rounded-[30px]">
+              <button class="bg-light-100 text-dark px-3 py-2.5 rounded-[30px]">
                 Cadastre-se
               </button>
             </li>
@@ -68,24 +72,42 @@
         </header>
 
         <!-- Hero -->
-        <div class="flex flex-col justify-center">
-          <h2 class="mb-8 text-[52px] font-bold">
-            Vá a qualquer lugar<br />com o app da Uber
-          </h2>
-          <p class="mb-[18px]">Solicite uma viagem, entre no carro e relaxe.</p>
-          <form action="" class="flex flex-col items-start">
-            <!-- Local -->
-            <label for="local"></label>
-            <input type="text" id="local" placeholder="Informe o local" class="mb-4 py-2.5"/>
-
-            <!-- Destiny -->
-            <label for="destiny"></label>
-            <input type="text" id="destiny" placeholder="Informar o destino" class="py-2.5"/>
-
-            <button class="px-[25px] py-3.5 rounded-lg mt-[30px] text-dark bg-light">
-              Ver preços
-            </button>
-          </form>
+        <div class="flex flex-col justify-center my-auto h-hero">
+          <div class="left-content">
+            <h2 class="mb-8 text-[52px] font-bold">
+              Vá a qualquer lugar<br />com o app da Uber
+            </h2>
+            <p class="mb-[18px]">Solicite uma viagem, entre no carro e relaxe.</p>
+            <form class="flex flex-col items-start">
+              <!-- Local -->
+              <label for="local"></label>
+              <input
+                type="text"
+                id="local"
+                placeholder="Informe o local"
+                class="bg-light-200 rounded-lg mb-4 py-2.5 pl-10 w-96 pr-3.5"
+              />
+  
+              <!-- Destiny -->
+              <label for="destiny"></label>
+              <input
+                type="text"
+                id="destiny"
+                placeholder="Informar o destino"
+                class="bg-light-200 rounded-lg py-2.5 pl-10 w-96 pr-3.5"
+              />
+  
+              <button
+                type="submit"
+                class="rounded-lg px-[25px] py-3.5 mt-[30px] text-dark bg-light-100"
+              >
+                Ver preços
+              </button>
+            </form>
+          </div>
+          <div class="right-content">
+            
+          </div>
         </div>
       </div>
       <footer></footer>
